@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-01-2017 a las 18:01:47
+-- Tiempo de generación: 31-01-2017 a las 19:35:13
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -19,6 +19,35 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `jobraider`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `log`
+--
+
+CREATE TABLE `log` (
+  `nombre` varchar(30) NOT NULL,
+  `fecha` date NOT NULL,
+  `hora` time NOT NULL,
+  `estado` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `log`
+--
+
+INSERT INTO `log` (`nombre`, `fecha`, `hora`, `estado`) VALUES
+('edu', '2017-01-31', '19:25:08', 'Trabajando'),
+('edu', '2017-01-31', '19:25:13', 'Trabajando'),
+('edu', '2017-01-31', '19:25:20', 'Ausente'),
+('edu', '2017-01-31', '19:25:22', 'Ausente'),
+('edu', '2017-01-31', '19:25:31', 'Fin de jornada'),
+('Jaime', '2017-01-31', '19:25:41', 'Trabajando'),
+('Jaime', '2017-01-31', '19:25:49', 'Trabajando'),
+('Jaime', '2017-01-31', '19:25:54', 'Ausente'),
+('Jaime', '2017-01-31', '19:25:56', 'Ausente'),
+('Jaime', '2017-01-31', '19:26:00', 'Fin de jornada');
 
 -- --------------------------------------------------------
 
